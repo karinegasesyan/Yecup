@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="face">https://www.facebook.com</string>
+    <string name="inst">https://instagram.com</string>
+    <string name="gPlus">https://plus.google.com</string>
+    <string name="twitter">https://twitter.com</string>
+</resources>

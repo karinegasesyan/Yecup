@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/bg">
+
+    <!-- Header aligned to top -->
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:background="#6787a5"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Yecup.org"
+            android:textColor="#ffffff"
+            android:textSize="25sp" />
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:src="@drawable/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="130dp"
+        android:scaleType="centerInside"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/header"
+        android:layout_centerHorizontal="true">
+    </ImageView>
+
+
+    <!-- Footer aligned to bottom -->
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentBottom="true"
+        android:background="#76EAF0E8"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/fb"
+            android:src="@drawable/fb"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:onClick="openBrowser"
+            android:tag="@string/face">
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/inst"
+            android:src="@drawable/instagram"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="80dp"
+            android:onClick="openBrowser"
+            android:tag="@string/inst">
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/gPlus"
+            android:src="@drawable/gplus"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="160dp"
+            android:onClick="openBrowser"
+            android:tag="@string/gPlus">
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/twitter"
+            android:src="@drawable/twitter"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="240dp"
+            android:onClick="openBrowser"
+            android:tag="@string/twitter">
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/email"
+            android:src="@drawable/email"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="320dp">
+        </ImageView>
+
+    </RelativeLayout>
+
+    <!-- Content below header and above footer -->
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/footer"
+        android:layout_below="@id/header"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:src="@drawable/thermometr"
+            android:layout_width="160dp"
+            android:layout_height="160dp">
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/icontwe"
+            android:src="@drawable/thermometr"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_marginLeft="200dp">
+        </ImageView>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="223dp"></FrameLayout>
+
+</RelativeLayout>
